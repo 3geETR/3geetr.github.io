@@ -249,6 +249,10 @@
             .section-title {
                 font-size: 2.5rem;
             }
+            /* Adjust social icons for smaller screens */
+            .social-icons-group {
+                gap: 1.5rem; /* Reduce gap on smaller screens */
+            }
         }
     </style>
 </head>
@@ -388,7 +392,8 @@
             <h2 class="section-title">Contact</h2>
             <p class="text-lg text-gray-300 mb-10 max-w-3xl mx-auto">If you'd like to discuss my projects, collaborate, or just say hello, feel free to reach out through the channels below:</p>
 
-            <div class="flex justify-center space-x-8 mb-10 social-icons-group">
+            <!-- Modified this line to include flex-wrap and adjusted gap for responsiveness -->
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-8 mb-10 social-icons-group">
                 <a href="mailto:3geetr@gmail.com" class="social-icon hover:text-red-400" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 <a href="https://3geetr.itch.io/" target="_blank" class="social-icon hover:text-red-500" aria-label="Itch.io"><i class="fab fa-itch-io"></i></a>
                 <a href="https://modrinth.com/user/3geE" target="_blank" class="social-icon hover:text-green-500" aria-label="Modrinth"><i class="fas fa-cube"></i></a>
